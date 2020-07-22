@@ -16,7 +16,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'to generate docker image from Dockerfile'
         sh 'docker build .'
