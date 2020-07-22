@@ -18,9 +18,9 @@ pipeline {
 
     stage('error') {
       steps {
+        sh 'pwd'
         echo 'to generate docker image from Dockerfile'
         sh 'docker build .'
-        sh 'pwd'
       }
     }
 
