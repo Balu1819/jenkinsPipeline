@@ -9,10 +9,10 @@ pipeline {
       }
     }
 
-    stage('deploy') {
+    stage('Build') {
       steps {
-        echo 'This is deploy'
-        sh 'pwd'
+        echo 'This is Build'
+        sh 'mvn clean package'
       }
     }
 
