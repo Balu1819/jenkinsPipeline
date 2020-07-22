@@ -16,9 +16,10 @@ pipeline {
       }
     }
 
-    stage('Artifact') {
+    stage('') {
       steps {
-        echo 'to store artifact'
+        echo 'to generate docker image from Dockerfile'
+        sh 'docker build .'
       }
     }
 
