@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
           steps {
             echo 'HI... This is build'
+            git(url: 'https://github.com/Balu1819/hello-world.git', branch: 'master')
           }
         }
 
